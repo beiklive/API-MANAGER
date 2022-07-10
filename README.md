@@ -1,18 +1,19 @@
-# Linux_CPP_Template
+# 登录验证器
 
-一个通用的C++模板，包含一些我常用的库
+为了给所有我的网站增加一个统一的API接口。
+方便管理所有的在线程序
 
-## 目录结构
-
->└───src
->    ├───3rd
->    │   ├───dpool
->    │   ├───filesystem
->    │   ├───httplib
->    │   ├───nlohmann
->    │   └───spdlog
->    └───func
-
+# 目录结构
+```
+└───src
+    ├───3rd    ------------------> 第三方库
+    │   ├───dpool
+    │   ├───filesystem
+    │   ├───httplib
+    │   ├───nlohmann
+    │   └───spdlog
+    └───func   ------------------> 自己的功能函数
+```
 `main.cpp`为整个程序的启动文件
 
 `src/3rd`为三方库的存放目录
@@ -35,14 +36,7 @@ make run
 ./main
 ```
 
-## 三方库介绍
+# API
+http://www.example.com/$func?$type=$body
 
-`nlohmann` 一个json库
 
-`httplib` 一个http库
-
-`spdlog` 一个log库
-
-`filesystem` 一个文件操作库
-
-`dpool` 一个简易的线程池
